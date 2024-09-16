@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '28487378'))
-API_HASH = environ.get('API_HASH', '8fbb5049d555f9d7db677e02a3132972')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6761188489:AAGqRuXzvxiYwEaL3JCWi9LgDrYONSmoWq0")
+API_ID = int(environ.get('API_ID', '2848778'))
+API_HASH = environ.get('API_HASH', '8fbb5049d555f9d7e02a3132972')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6768489:AAGJCWi9LgDrYONSmoWq0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -46,7 +46,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-100
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pebef88860:pebef88860@cluster0.uens2hb.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://0@cluster0.uens2hb.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
