@@ -76,7 +76,7 @@ async def start():
         print("Restarted All Clone Bots.")
     app = web.AppRunner(await web_server())
     await app.setup()
-    bind_address = "206.1.53.78"
+    bind_address = "103.248.82.182"
     await web.TCPSite(app, bind_address, PORT).start()
     await idle()
 
