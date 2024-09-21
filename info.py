@@ -86,7 +86,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), False)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
@@ -101,7 +101,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/+v1AdY5bm1i5mOGI1')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1363e5dd5ec8084dd9df83fcb53d436870c93cf1')
 
@@ -135,7 +135,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = True
-URL = environ.get("URL", "https://vjadvance-e3fe2b12b137.herokuapp.com/")
+URL = environ.get("URL", "https://206.1.58.142/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
